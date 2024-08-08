@@ -1,4 +1,9 @@
 <?php 
+	$sexo=$_POST['sexoAlumno'];
+
+	if($sexo=="1"){
+		echo("es masculino");
+	}
 	include("conexion.php");
 	$conexion = mysqli_connect($host,$user,$pwd,$db) or die("Fallo de conexión");
 
@@ -7,7 +12,7 @@
 	values
 	('$_POST[CUIL_Alumno]','$_POST[numTutor]')";
 	mysqli_query($conexion, $cargaAlumnos) or die ("Fallo de consulta a la hora de cargar los datos a la tabla 'alumnos'");
-	echo "datos cargados de la tabla alumnos ";
+	echo "datos cargados de la tabla alumnos "; 
 
 	$cargaDatosPersonales= "insert into datospersonales (CUIL_Alumno,nombre, apellido, fechaNac, nacionalidad, calle, altura, localidad) 
 	values
