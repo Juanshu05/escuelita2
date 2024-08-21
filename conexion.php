@@ -2,6 +2,6 @@
 	$host = 'localhost';
 	$user = 'root';
 	$pwd = '';
-	$db = 'sgne';
+	$db = 'sgne2';
 ?>
 s
