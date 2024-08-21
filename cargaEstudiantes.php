@@ -1,5 +1,7 @@
 <?php 
+	include("conexion.php");
 	$sexo=$_POST['sexo'];
+	echo $sexo;
 	if ($sexo=="1"){
 		$sexoAlfabetico="Masculino";
 	}
@@ -11,8 +13,15 @@
 	}
 	echo($sexoAlfabetico);
 
-	include("conexion.php");
+	
 	$conexion = mysqli_connect($host,$user,$pwd,$db) or die("Fallo de conexión");
+
+	$cargaDatosPersonales= "insert into personas (CUIL,nombre, apellido, genero, fechaNac, nacionalidad, calle, altura, municipio,rol) 
+	values
+	('$_POST[CUIL]','$_POST[nombre]','$_POST[apellido]','$_POST[fechaNacimiento]','$_POST[genero]','$_POST[nacionalidad]','$_POST[calle]','$_POST[altura]','$_POST[municipio]','$_POST[rol]')";
+
+	mysqli_query($conexion, $cargaDatosPersonales) or die ("Fallo de consulta a la hora d0e cargar a la tabla 'datos personales'");
+	echo "datos cargados de la tabla datos personales";
 
 	$cargaAlumnos = "insert into alumno 
 	(CUIL,numCelularTutor) 
@@ -23,13 +32,6 @@
 	echo "datos cargados de la tabla alumnos "; 
 	// sexo
 
-	$cargaDatosPersonales= "insert into datospersonales (CUIL_Alumno,nombre, apellido, fechaNac, nacionalidad, calle, altura, localidad, sexo) 
-	values
-	('$_POST[CUIL_Alumno]','$_POST[nombre]','$_POST[apellido]','$_POST[fechaNacimiento]','$_POST[nacionalidad]','$_POST[calle]','$_POST[altura]','$_POST[localidad]','$sexoAlfabetico')";
-
-	mysqli_query($conexion, $cargaDatosPersonales) or die ("Fallo de consulta a la hora de cargar a la tabla 'datos personales'");
-	echo "datos cargados de la tabla datos personales";
-	
 ?>
 <html>
 	<body>
