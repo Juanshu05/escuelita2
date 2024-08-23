@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-08-2024 a las 16:49:38
+-- Tiempo de generación: 23-08-2024 a las 13:24:25
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -37,6 +37,13 @@ CREATE TABLE `alumno` (
   `estado` varchar(20) DEFAULT NULL,
   `ID_curso` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `alumno`
+--
+
+INSERT INTO `alumno` (`ID`, `ID_Persona`, `año`, `division`, `especialidad`, `turno`, `estado`, `ID_curso`) VALUES
+(2, NULL, NULL, NULL, NULL, NULL, 'Activo', NULL);
 
 -- --------------------------------------------------------
 
@@ -93,8 +100,16 @@ CREATE TABLE `informacioncontacto` (
   `ID_Persona` double NOT NULL,
   `numCelular` varchar(12) NOT NULL,
   `numTelefono` varchar(12) NOT NULL,
-  `correoElectronico` varchar(40) NOT NULL
+  `correoElectronico` varchar(40) NOT NULL,
+  `numTutor` varchar(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `informacioncontacto`
+--
+
+INSERT INTO `informacioncontacto` (`ID`, `ID_Persona`, `numCelular`, `numTelefono`, `correoElectronico`, `numTutor`) VALUES
+(0, 0, '', '', '', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -143,7 +158,7 @@ CREATE TABLE `personas` (
 --
 
 INSERT INTO `personas` (`ID`, `CUIL`, `nombre`, `apellido`, `genero`, `fechaNac`, `nacionalidad`, `calle`, `altura`, `municipio`, `rol`) VALUES
-(0, 0, 'ok', 'chau', '0023-12-12', '0000-00-00', 'si', 'no', 'bye', 'adios', 1);
+(0, 1111111, 'aaaaaaaa', 'sssssssss', 'Masculino', '0211-02-11', 'aaa', 'sss', '11', 'ssssss', 0);
 
 -- --------------------------------------------------------
 
@@ -154,7 +169,11 @@ INSERT INTO `personas` (`ID`, `CUIL`, `nombre`, `apellido`, `genero`, `fechaNac`
 CREATE TABLE `profesional` (
   `ID` double NOT NULL,
   `ID_Persona` double DEFAULT NULL,
-  `fechaIngreso` date DEFAULT NULL
+  `fechaIngreso` date DEFAULT NULL,
+  `titulo` varchar(40) DEFAULT NULL,
+  `tipoTitulo` varchar(40) DEFAULT NULL,
+  `institucionEgreso` varchar(40) DEFAULT NULL,
+  `fechaEgreso` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
@@ -234,7 +253,7 @@ ALTER TABLE `profesional`
 -- AUTO_INCREMENT de la tabla `alumno`
 --
 ALTER TABLE `alumno`
-  MODIFY `ID` double NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` double NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
