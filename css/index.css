@@ -1,0 +1,46 @@
+
+/* Asegúrate de que .product-list esté usando Flexbox */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a una nueva línea si no hay suficiente espacio */
+    gap: 20px; /* Espacio entre tarjetas; ajusta según sea necesario */
+    justify-content: center; /* Centra las tarjetas horizontalmente; usa flex-start para alinear a la izquierda */
+    padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+/* Asegúrate de que cada tarjeta tenga un ancho adecuado */
+.card {
+    background-color: #f9f9f9; /* Color de fondo opcional */
+    border: 1px solid #ddd;    /* Borde ligero alrededor de las tarjetas */
+    border-radius: 8px;        /* Bordes redondeados */
+    padding: 20px;             /* Espacio interno dentro de la tarjeta */
+    width: 200px;              /* Ancho de cada tarjeta; ajusta según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    margin-bottom: 15px;       /* Espacio debajo de cada tarjeta */
+    text-align: center;        /* Centra el texto dentro de cada tarjeta */
+}
+
+
+.materia{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+/* Estilo para la información dentro de cada tarjeta */
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 60px;
+    justify-content: center;
+    display: flex;
+    margin-left:65px;    
+}
+
+.viar{
+    width: 20px;
+    background-color: red;
+}
