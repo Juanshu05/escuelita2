@@ -7,5 +7,5 @@
 
 	mysqli_query($con, $query) or die ("Fallo de consulta");
 	echo "datos cargados";
-    
+    echo "hola";
 ?>
