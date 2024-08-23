@@ -10,9 +10,11 @@ header {
     padding: 15px;
     background-color: #3b5998; /* Un color azul elegante */
     color: white;
-    text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    justify-content: space-between;
+    display: flex;
+    padding: 0.8rem;
 }
 
 /* Estilo del título */
@@ -23,12 +25,20 @@ header .prese h2 {
     letter-spacing: 1px;
 }
 
+header .prese h1 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+
 /* Nav-items */
 .nav-items {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
+ 
 }
 
 .nav-items a {
@@ -38,6 +48,12 @@ header .prese h2 {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list{
+    display: flex;
+    gap: 1rem
+
 }
 
 .nav-items a:hover {
@@ -90,3 +106,17 @@ header .prese h2 {
 .Tabla input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+.botone{
+    display: none;
+}
+
+@media screen and (min-width: 200px){}
+ .botone{
+    display:block;
+}
+
+    .nav-list{
+        display: none;
+    }
+
