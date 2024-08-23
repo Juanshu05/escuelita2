@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    padding: 15px;
+    background-color: #3b5998; /* Un color azul elegante */
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilo del título */
+header .prese h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Nav-items */
+.nav-items {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-items a:hover {
+    background-color: #4c70ba;
+    color: #f4f4f4;
+}
+
+/* Texto "Cargar :" */
+.nav-items .carga {
+    color: #dcdcdc;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+/* Contenedor para centrar las tablas */
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+/* Estilo de las tablas */
+.Tabla {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.Tabla input,
+.Tabla select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Tabla input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.Tabla input[type="submit"]:hover {
+    background-color: #45a049;
+}
