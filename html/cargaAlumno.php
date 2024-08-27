@@ -28,12 +28,13 @@
             </select> <br>
             <input type="date" name="fechaNacimiento" placeholder=""> <br>
             <input type="text" name="nacionalidad" placeholder="Nacionalidad"> <br>
-            <input type="text" name="calle" placeholder="Calle"> <br>
-            <input type="text" name="altura" placeholder="Altura"> <br>
-            <input type="text" name="municipio" placeholder="Localidad"> <br>
-            <input type="text" name="numCelular" placeholder="Celular"> <br>
-            <input type="text" name="numTutor" placeholder="Numero del Tutor"> <br>
-            <input type="submit" value="Enviar">
+            <input type="text" name="calle"         placeholder="Calle"> <br>
+            <input type="text" name="altura"        placeholder="Altura"> <br>
+            <input type="text" name="municipio"     placeholder="Municipio"> <br>
+            <input type="text" name="numTutor"      placeholder="Numero del Tutor"> <br>
+            <input type="hidden" name="rolPersona"      value="alumno"> <br>
+            <input type="hidden" name="estadoPersona"   value="activo"> <br> <!-- LPTM no funciona este hdp!-->
+            <input type="submit" >
         </form>
     </div>
 </body>
