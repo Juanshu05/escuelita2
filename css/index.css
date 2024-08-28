@@ -1,4 +1,14 @@
 
+body{
+    background-image: url('../"Imagenes/muni.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Asegúrate de que .product-list esté usando Flexbox */
 .product-list {
     display: flex;
@@ -45,15 +55,12 @@ input{
     background-color: red;
 }
 
-.fondo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.fondo {
+    background-image: url('../Imagenes/muni.jpeg');
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed; /* Agrega esta propiedad */
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
+    background-position: center center;
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la ventana */
 }

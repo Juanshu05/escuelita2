@@ -1,75 +1,100 @@
-/* header.css */
-
+/* Estilo para el contenedor del encabezado */
 header {
-    background-color: #2b8aaf; /* Fondo gris claro para el encabezado */
+    background-color: #2b8aaf;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0;
     height: 90px;
+    position: relative;
 }
 
+/* Contenedor flex para el título y la imagen */
 .prese {
-    padding-left: 20px; /* Espacio a la izquierda del logo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
-header .prese h1 {
+/* Estilo para el título h1 */
+.prese h1 {
     margin: 0;
     font-weight: bold;
     letter-spacing: 1px;
-    color: rgb(255, 255, 255); /* Color del texto del logo */
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
 }
 
+/* Estilo para el contenedor de la imagen */
 .logo {
     width: 161px;
     height: 91px;
+    margin-right: 20px;
     display: flex;
-    margin-right: 250px;
+    align-items: center; /* Centra la imagen verticalmente */
 }
 
-.Logo2 {
-    width: 160px;
-    height: 81px;
+.logo img {
+    max-height: 100%; /* Ajusta la altura máxima de la imagen para mantener la proporción */
+}
+
+/* Estilo para los botones del menú */
+.menu-buttons {
     display: flex;
-    margin-right: px;
-    margin-top: 610px;
-}
-/* index.css */
-
-body {
-    margin: 0;
-    background-color: #f4f4f4;
-    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+    align-items: center;
 }
 
-.img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+/* Estilo para el botón */
+.botone {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 20px;
 }
-/* main.css */
 
+.botone2 {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 145px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* Estilo para el botón "Cerrar" */
+#closeMenu {
+    display: none; /* Oculta el botón "Cerrar" por defecto */
+}
+/* Estilos para el menú de navegación */
 .nav-list {
-    background-color: #333; /* Fondo negro para el menú */
+    background-color: #333;
     font-size: large;
-    height: 100vh;
+    height: 90vh;
     display: none;
     flex-direction: column;
-    padding-right: 10px; 
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 15px;
     position: absolute;
     right: 0;
     top: 0;
-    width: 200px;
+    width: 215px;
     z-index: 1000;
 }
 
-.nav-list > button {
-    width: 50px;
-    margin-bottom: 20px;
-}
-
+/* Estilos para la lista de navegación */
 .nav-list ul {
     list-style: none;
     margin: 0;
@@ -77,42 +102,40 @@ body {
 }
 
 .nav-list li {
-    margin-bottom: 15px; /* Espacio entre los elementos del menú */
+    margin-bottom: 15px;
 }
 
 .nav-list li a {
     text-decoration: none;
-    color: white; /* Color de texto del menú */
+    color: white;
     font-weight: bold;
 }
 
-.botone {
-    display: none;
+/* Estilo para el logo en el menú de navegación */
+.Logo2 {
+    width: 190px;
+    height: 95px;
+    display: block;
+    margin-top: 390px;
 }
 
+/* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 797px) {
-    .botone {
-        display: block;
+    .menu-buttons {
+        display: flex;
     }
 
     .nav-list {
-        display: none;
-        flex-direction: column;
-        align-items: flex-end;
+        display: none; /* Oculto por defecto */
     }
 
-    .nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: 2rem;
-        align-items: flex-end;
+    .nav-list.open {
+        display: flex; /* Mostrar cuando está abierto */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .nav li a {
-        text-decoration: none;
         color: white;
-        align-items: flex-end;
     }
 }
