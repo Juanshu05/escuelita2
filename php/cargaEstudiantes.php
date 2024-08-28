@@ -3,17 +3,21 @@
 
 	##var_dump($_POST);
 
+	$Estado=$_POST['estado'];
+
+	echo($Estado);
+
 	$conexion = mysqli_connect($host,$user,$pwd,$db) or die("Fallo de conexión");
 	$cargaDatosPersonales= "insert into personas (CUIL,nombre, apellido, genero, fechaNac, nacionalidad, calle, altura, municipio, rol) 
 	values
-	('$_POST[CUIL]','$_POST[nombre]','$_POST[apellido]','$_POST[sexo]','$_POST[fechaNacimiento]','$_POST[nacionalidad]','$_POST[calle]','$_POST[altura]','$_POST[municipio]','$_POST[rolPersona]')";
+	('$_POST[CUIL]','$_POST[nombre]','$_POST[apellido]','$_POST[sexo]','$_POST[fechaNacimiento]','$_POST[nacionalidad]','$_POST[calle]','$_POST[altura]','$_POST[municipio]','$_POST[rol]')";
 	mysqli_query($conexion, $cargaDatosPersonales) or die ("Fallo de consulta a la hora d0e cargar a la tabla 'datos personales'");
 	echo "datos cargados a la tabla datos personales";
 	
 	$cargaAlumnos = "insert into alumno 
 	(estado) 
 	values
-	('$_POST[estadoPersona]')";
+	('$_POST[estado]')";
 	mysqli_query($conexion, $cargaAlumnos) or die ("Fallo de consulta a la hora de cargar los datos a la tabla 'alumnos'");
 	echo "datos cargados a la tabla alumnos "; 
 	
