@@ -50,10 +50,10 @@
             </button>
         </div>
             <ul>
-                <li><a class="nav" href="html/cargaAlumno.html">Alumno</a></li>
-                <li><a class="nav" href="html/cargaProfesores.html">Profesor</a></li>
-                <li><a class="nav" href="html/cargaCurso.html">Curso</a></li>
-                <li><a class="nav" href="html/cargaMateria.html">Materia</a></li>
+                <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaAlumno.php">Alumno</a></li>
+                <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaProfesores.php">Profesor</a></li>
+                <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaCurso.php">Curso</a></li>
+                <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaMateria.php">Materia</a></li>
             </ul>
             <img class="Logo2" src="Imagenes/sanmiguel.png" alt="Logo San Miguel">
         </nav>        
