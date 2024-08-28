@@ -16,9 +16,8 @@
         </div>
     </header>
     <!-- Contenedor para alinear las tablas -->
-    <div class="content-wrapper">
         <form class="Tabla" method="POST" action="../php/cargaEstudiantes.php">
-            <input type="number" name="CUIL_Alumno" placeholder="CUIL_Alumno"> <br>
+            <input type="number" name="CUIL" placeholder="CUIL_Alumno"> <br>
             <input type="text" name="nombre" placeholder="Nombre"> <br>
             <input type="text" name="apellido" placeholder="Apellido"> <br>
             <select name="sexo">
@@ -28,15 +27,13 @@
             </select> <br>
             <input type="date" name="fechaNacimiento" placeholder=""> <br>
             <input type="text" name="nacionalidad" placeholder="Nacionalidad"> <br>
-            <input type="text" name="calle" placeholder="Calle"> <br>
-            <input type="text" name="altura" placeholder="Altura"> <br>
-            <input type="text" name="localidad" placeholder="Localidad"> <br>
-            <input type="text" name="numCelular" placeholder="Celular"> <br>
-            <input type="text" name="numTutor" placeholder="Numero del Tutor"> <br>
-            <input type="submit" value="Enviar">
+            <input type="text" name="calle"         placeholder="Calle"> <br>
+            <input type="text" name="altura"        placeholder="Altura"> <br>
+            <input type="text" name="municipio"     placeholder="Municipio"> <br>
+            <input type="text" name="numTutor"      placeholder="Numero del Tutor"> <br>
+            <input type="hidden" name="estado" value="activo" >
+            <input type="hidden" name="rol" value="alumno">
+            <input type="submit" >
         </form>
-
-     
-    </div>
 </body>
 </html>
