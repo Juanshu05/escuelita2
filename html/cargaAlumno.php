@@ -16,7 +16,6 @@
         </div>
     </header>
     <!-- Contenedor para alinear las tablas -->
-    <div class="content-wrapper">
         <form class="Tabla" method="POST" action="../php/cargaEstudiantes.php">
             <input type="number" name="CUIL" placeholder="CUIL_Alumno"> <br>
             <input type="text" name="nombre" placeholder="Nombre"> <br>
@@ -32,10 +31,9 @@
             <input type="text" name="altura"        placeholder="Altura"> <br>
             <input type="text" name="municipio"     placeholder="Municipio"> <br>
             <input type="text" name="numTutor"      placeholder="Numero del Tutor"> <br>
-            <input type="hidden" name="rolPersona"      value="alumno"> <br>
-            <input type="hidden" name="estadoPersona"   value="activo"> <br> <!-- LPTM no funciona este hdp!-->
+            <input type="hidden" name="estado" value="activo" >
+            <input type="hidden" name="rol" value="alumno">
             <input type="submit" >
         </form>
-    </div>
 </body>
 </html>
