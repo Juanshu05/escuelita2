@@ -49,11 +49,12 @@
                 </svg>
             </button>
         </div>
-            <ul>
+            <ul> 
+                <h3><li><a class="nav" href="http://localhost:8080/escuela-local/">Pagina Principal</a></li></h3>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaProfesores.php">Profesor</a></li>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaCurso.php">Curso</a></li>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaMateria.php">Materia</a></li>
-                <li><a class="nav" href="http://localhost:8080/escuela-local/">Pagina Principal</a></li>
+               
 
             </ul>
             <img class="Logo2" src="../Imagenes/sanmiguel.png" alt="Logo San Miguel">

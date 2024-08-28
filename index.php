@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Principal</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
@@ -34,7 +34,7 @@
         </div>
         <nav class="nav-list">
             <div class="menu-buttons">
-            <button id="closeMenu" class="botone2">
+                <button id="closeMenu" class="botone2">
                 <svg width="60px" height="60px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
                     <g id="SVGRepo_bgCarrier" stroke-width="0">
                         <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="0" fill="#333" stroke-width="0"/>
@@ -47,15 +47,15 @@
                         </g>
                     </g>
                 </svg>
-            </button>
-        </div>
+                </button>
+            </div>
             <ul>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaAlumno.php">Alumno</a></li>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaProfesores.php">Profesor</a></li>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaCurso.php">Curso</a></li>
                 <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaMateria.php">Materia</a></li>
             </ul>
-            <img class="Logo2" src="Imagenes/sanmiguel.png" alt="Logo San Miguel">
+            <img src="Imagenes/sanmiguel.png" alt="Logo San Miguel">
         </nav>        
     </header>
     <img class="fondo" src="Imagenes/muni.jpeg" alt="#">

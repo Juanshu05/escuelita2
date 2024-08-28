@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profesores</title>
     <link rel="stylesheet" href="../css/indexinscrip.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -50,10 +50,10 @@
             </button>
         </div>
         <ul>
+            <h3><li><a class="nav" href="http://localhost:8080/escuela-local/">Pagina Principal</a></li></h3>
             <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaAlumno.php">Alumno</a></li>
             <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaCurso.php">Curso</a></li>
             <li><a class="nav" href="http://localhost:8080/escuela-local/html/cargaMateria.php">Materia</a></li>
-            <li><a class="nav" href="http://localhost:8080/escuela-local/">Pagina Principal</a></li>
         </ul>
         <img class="Logo2" src="../Imagenes/sanmiguel.png" alt="Logo San Miguel">
     </nav>        
